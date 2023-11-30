@@ -15,7 +15,7 @@ bool isMatchingPair(char character1, char character2) {
 }
 
 bool areParenthesesBalanced(const std::string& expression) {
-    std::stack<char> stack;
+    stack<char> stack;
     for (char bracket : expression) {
         if (bracket == '(' || bracket == '{' || bracket == '[') {
             stack.push(bracket);
